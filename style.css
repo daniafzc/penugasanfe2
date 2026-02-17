@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Junicode";
+  src: url(assets/junicode.regular.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Junicode";
+  src: url(assets/junicode.italic.ttf);
+  font-style: italic;
+}
+
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+footer {
+  width: 100%;
+  min-height: 600px;
+  background-color: #28282b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 5%;
+  box-sizing: border-box;
+  color: #ededed;
+}
+
+.footer p,
+a {
+  font-size: 20px;
+}
+.overview {
+  display: flex;
+  flex-direction: row;
+}
+
+.identity {
+  width: 70%;
+  padding-right: 30px;
+}
+.identity p {
+  width: 70%;
+}
+.pages,
+.support {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+  padding: 0 0px 0 30px;
+}
+
+.social-media {
+  padding-top: 40px;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  gap: 0px;
+}
+
+.social-media h2 {
+  margin: 0px 0px 10px 0px;
+}
+.logos {
+  display: flex;
+  gap: 12px;
+}
+.logos img {
+  width: 40px;
+  padding-bottom: 20px;
+}
+
+hr {
+  width: 100%;
+  height: 0.5px;
+  background: #ededed;
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 6px;
+  padding-top: 10px;
+}
+
+.copyright h2 {
+  font-weight: 400;
+}
