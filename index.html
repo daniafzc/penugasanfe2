@@ -11,148 +11,40 @@
     
   </head>
   <body>
-    <section class="about">
-        <img class="upper2" src="assets/upper2.png" alt="upper">
-        <img class="lower" src="assets/lower.png" alt="lower">
-        <div>
-            <h2 class="tentang"> Tentang  <span class="itallic">Kami</span></h2>
-            <p class="info">Omah FE seru banget asli coding nya seru dan belajar hal baru terus pokoknya WOW. Harus banget sih join OTI apalagi divisi OmahFE nya yang sangat gong dan asik. Kapan Lagi masih kuliah udah belajar Front End dan ikut project-project keren. Pokoknya kalian ngga akan nyesel deh join Omah FE. Penugasannya juga bermanfaat dan penting banget lho untuk masa depan. Bisa ketemu banyak teman dan juga belajar. Ayo Daftar</p>
-            <div class="number-group">
-                <div class="number-item">
-                    <h3 class="number">2015</h3>
-                    <p class="number-info">Berdiri Sejak</p>
-                </div>
+    <header class="navbar-menu">
+        <div class="logo">Omah<span>FE</span></div>
+        <nav>
+          <a href="#">About</a>
+          <a href="#">Features</a>
+          <a href="#">Portofolio</a>
+          <a href="#">Contact</a>
+        </nav>
+      <div class="nav-buttons">
+          <img class="light-dark" src="./assets/lightdark.png">
+          <div class="btn-nav">
+            <button class="btn-2">Sign In</button>
+            <button class="btn-1">Sign Up</button>
+          </div>
+      </div>
+    </header>
 
-                <div class="number-item">
-                    <h3 class="number">225</h3>
-                    <p class="number-info">Total Project</p>
-                </div>
-            </div>
-            <div class="more">
-                <button class="border-orange" onclick="MoreInfo()"> Selengkapnya<img src="assets/right.png" alt="right"> </button>
-            </div>
+    <section class="hero hero-background">
+      <div class="hero-text">
+        <div class="open-project">
+          <img src="assets/laptop.png" class="icons" alt="laptop.png">
+          <h1>Open For Project</h1>
         </div>
+          <h1 class="get-insights">Get insights on</h1>
+          <h1 class="fe">Omah<span>FE.</span></h1>
+          <p class="hero-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="btn-hero">
+            <button class="btn-1">Get Started <img src="./assets/arrow.png" class="icons"></button>
+            <button class="btn-2">More Analytics</button>
+          </div>
+      </div>
+      <div class="hero-img">
+          <img src="./assets/eminem.jpg" alt="Hero Image">
+      </div>
     </section>
-     <section class="portfolio">
-        <div>
-            <div>
-                <h2 class="title-blend">See Our Latest<span class="itallic"> Portfolio </span></h2>
-                <div class="portfolio-border">
-                    <button class="border-org2" onclick="MorePortfolio()"> See Our Full Portfolio <img src="assets/icon.png" alt="icon"></button>
-                    <button class="border-grey" onclick="ContactUs()"> Contact Us <img src="assets/phone.png" alt="phone"></button>
-                </div>
-            </div>
-            <div class="list">
-                <div class="portfolio-card">
-                    <img class="card-img" src="assets/kucing.png">
-                    <p class="card-title">Client 1</p>
-                </div>
-
-                <div class="portfolio-card">
-                    <img class="card-img" src="assets/kucing.png">
-                    <p class="card-title">Client 2</p>
-                </div>
-
-                <div class="portfolio-card">
-                    <img class="card-img" src="assets/kucing.png">
-                    <p class="card-title">Client 3</p>
-                </div>
-
-                <div class="portfolio-card">
-                    <img class="card-img" src="assets/kucing.png">
-                    <p class="card-title">Client 4</p>
-                </div>
-
-                <div class="portfolio-card">
-                    <img class="card-img" src="assets/kucing.png">
-                    <p class="card-title">Client 5</p>
-                </div>
-
-                <div class="portfolio-card">
-                    <img class="card-img" src="assets/kucing.png">
-                    <p class="card-title">Client 6</p>
-                </div>
-
-                <div class="portfolio-card">
-                    <img class="card-img" src="assets/kucing.png">
-                    <p class="card-title">Client 7</p>
-                </div>
-            </div>
-
-            <div class="list">
-                <div class="portfolio-card2">
-                    <img class="card-img2" src="assets/kucing.png">
-                    <p class="card-title2">Client 8</p>
-                </div>
-
-                <div class="portfolio-card2">
-                    <img class="card-img2" src="assets/kucing.png">
-                    <p class="card-title2">Client 9</p>
-                </div>
-
-                <div class="portfolio-card2">
-                    <img class="card-img2" src="assets/kucing.png">
-                    <p class="card-title2">Client 10</p>
-                </div>
-
-                <div class="portfolio-card2">
-                    <img class="card-img2" src="assets/kucing.png">
-                    <p class="card-title2">Client 11</p>
-                </div>
-
-                <div class="portfolio-card2">
-                    <img class="card-img2" src="assets/kucing.png">
-                    <p class="card-title2">Client 12</p>
-                </div>
-
-                <div class="portfolio-card2">
-                    <img class="card-img2" src="assets/kucing.png">
-                    <p class="card-title2">Client 13</p>
-                </div>
-
-                <div class="portfolio-card2">
-                    <img class="card-img2" src="assets/kucing.png">
-                    <p class="card-title2">Client 14</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <footer>
-      <div class="overview">
-        <div class="identity">
-          <img src="assets/omahfe.png" alt="" />
-          <p>
-            Gedung Fakultas MIPA UGM Sekip Utara, Bulaksumur, Sinduadi, Mlati,
-            Sleman, DI Yogyakarta
-          </p>
-        </div>
-        <div class="pages">
-          <h2>Pages</h2>
-          <a href="#about">About Us</a>
-          <a href="#features">Our Services</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#testimonial">Testimonials</a>
-        </div>
-        <div class="support">
-          <h2>Support</h2>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-      <div class="social-media">
-        <h2>Connect with us</h2>
-        <div class="logos">
-          <img src="assets/image 5.png" />
-          <img src="assets/image 3.png" />
-          <img src="assets/image 6.png" />
-          <img src="assets/image 7.png" />
-        </div>
-      </div>
-      <hr />
-      <div class="copyright">
-        <img src="assets/image 10.png" />
-        <h2>OmahFE 2025</h2>
-      </div>
-    </footer>
   </body>
 </html>
