@@ -1,364 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 @font-face {
   font-family: "Junicode";
-  src: url("../assets/junicode.regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
+  src: url(./fonts/junicode/Junicode.ttf)
 }
 
 @font-face {
-  font-family: "Junicode";
-  src: url("../assets/junicode.italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
+  font-family: "Junicode-italic";
+  src: url(./fonts/junicode/Junicode-Italic.ttf)
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@font-face {
+  font-family: "Plus-Jakarta-Sans";
+  src: url(./fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+/*main page*/
 body {
-  font-family: "Plus Jakarta Sans", "Junicode", "Bricolage Grotesque", sans-serif;
-  background-color: #252525;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    background: rgba(37, 37, 37, 1);
 }
-.about{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid #313030;
-    width: 100%;
-    max-width: 1280px;
-    height: 633px;
-    margin: 0 auto;
-    position: relative;
+
+span {
+    color: rgba(247, 111, 83, 1);
 }
-.upper2{
-    display: flex;
-    position: absolute;
-    right: -19px;
-    top: 0;
-}
-.lower{
-    display: flex;
-    position: absolute;
-    left: -19px;
-    bottom: -25px;
-    z-index: -1;
-}
-.tentang{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap:8px;
-    width: 300;
-    height: 32;
-    top: 98px;
-    left: 489px;
+
+a {
+    margin: 0px 110px 0px 0px;
     font-family: "Bricolage Grotesque";
-    font-weight: 700;
-    font-style: normal;
-    font-size: 48px;
-    line-height: 32px;
-    letter-spacing: 0%;
-    text-align: center;
-    color:#FFFFFF;
-    margin-bottom: 34px;
-    color: #FFF;
-}
-.itallic{
-    font-family: "Junicode";
-    font-style: italic;
-    font-weight: 400;
-    font-size: 48px;
-    color:#F76F53;
-    line-height: 32px;
-}
-.info{
-    width: 651px;
-    top: 164px;
-    left: 315px;
-    font-family: "Plus Jakarta Sans";
-    font-weight: 400px;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: center;
-    color: #FFFFFF;
-    margin-bottom: 23px;
-}
-.number-group{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-    gap: 56px;
-}
-.number-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-.number{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 60px;
-    font-style: medium;
-    color:#F76F53;
-    gap: 0px;
-    margin: 0px;
-}
-.number-info{
-    font-family: "Plus Jakarta Sans";
     font-weight: 500;
     font-style: Medium;
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: center;
-    color: #FFFFFF;
-    gap: 23px;
-}
-.more{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.border-orange{
-    display: inline-flex;
-    padding: 12px 16px;
-    align-items: center;
-    gap: 12px;
-    justify-content: center;
-    font-family: "Bricolage Grotesque";
-    font-style: medium;
-    font-size: 20px;
-    color: #FFFFFF;
-    width: 185px;
-    height: 46px;
-    border-radius: 10px;
-    border-color: #F76F53;
-    border-style: solid;
-    background-color: #F76F53;
-    cursor: pointer;
-}
-.border-orange img{
-    display: flex;
-}
-.portfolio{
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    border-bottom: 1px solid #313030;
-    width: 100%;
-    max-width:1280px;
-    height: 950px;
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 24px;
-}
-.title-blend{
-    font-family: "Bricolage Grotesque";
-    font-weight: 400;
-    font-style: normal;
-    font-size: 45px;
     line-height: 100%;
-    color: #EDEDED;
-    gap: 30px;
+    letter-spacing: 0%;
+    text-decoration: none; 
+    color: rgba(186, 186, 186, 1);
+    display: flexbox;
 }
-.portfolio-border{
-    display:flex;
-    align-items: center;
-    gap: 18.9px;
+
+h1, h2, h3, p {
+    color: white;
 }
-.border-grey{
-    display: inline-flex;
-    align-items: center;
-    font-family: "Bricolage Grotesque";
-    font-weight: 600px;
-    font-style: normal;
-    font-size: 18px;
-    line-height: normal;
-    gap: 12px;
-    border-radius: 10px;
-    border-color: #D1CFC0;
-    border-style: solid;
-    background: #D1CFC0;
-    color: #4F4F51;
+
+.btn-primary {
+    background: #ff7446;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    color: white;
     cursor: pointer;
-    height: 46px;
-    padding: 12px 16px;
+    gap: 2rem;
 }
-.border-grey img{
+
+.btn-1 {
+  display: flex;
+  border-radius: 10px;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  background-color: #ff7446;
+  color: white;
+  font-family: Bricolage Grotesque;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 18px;
+  gap: 1rem;
+  transition: 0.3s;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-2 {
+  display: flex;
+  border-radius: 10px;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  background-color: rgba(37, 37, 37, 1);
+  border: rgba(209, 207, 192, 1) solid;
+  color: rgba(186, 186, 186, 1);
+  font-family: Bricolage Grotesque;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 18px;
+  gap: 1rem;
+  transition: 0.3s;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*header*/
+
+header {
+    width: max-content;
+    border-bottom: 2px solid rgba(79, 79, 81, 1);
+}
+
+.navbar {
+    width: inherit;
+    height: 80px;
+}
+
+.navbar-menu {
     display: flex;
-}
-.border-org2{
-    display: inline-flex;
-    padding: 12px 16px;
+    height: 80px;
     align-items: center;
-    gap: 12px;
-    height: 46px;
+    width: inherit;
+}
+
+.logo {
+    align-items: center;
+    margin: 0px 120px 0px 70px;
+    font-family: "Bricolage Grotesque";
+    color: rgba(237, 237, 237, 1);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.nav-buttons {
+    width: fit-content;
+    display: flex;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 
+}
+
+.light-dark {
+    display: flex;
+    align-items: center; 
     justify-content: center;
-    font-family: "Bricolage Grotesque";
-    font-style: normal;
-    font-size: 18px;
-    color: #FFFFFF;
-    border-radius: 10px;
-    border-color: #F76F53;
-    border-style: solid;
-    background-color: #F76F53;
-    cursor: pointer;
+    height: fit-content;
+    margin: 12px 20px 0px 400px;
 }
-.border-orange img{
+
+.btn-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+/*hero*/
+.hero {
     display: flex;
+    justify-content: center;
+    padding: 200px 0px 300px;
+    gap: 20rem;
+    position: unset;
+    z-index: 1;
+    width: max-content;
+    margin: 0px 0px 0px 100px;
 }
-.list {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-    padding: 24px 30px 12px 0;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
+
+.hero-text {
+ width: fit-content;
 }
-.portfolio-card {
-    flex: 0 0 320px;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    gap: 12px;
-    border-radius: 12px;
-    background: transparent;
-    margin-top: 0px;
-    border-radius: 10px;
-}
-.card-img {
-    width: 346px;
-    height: 263.922px;
-    object-fit: cover;
-    border-radius: 10px;
-    border-radius: 10px;    
-    display: block;
-    cursor: pointer;
-}
-.card-title {
-    position: absolute;
-    margin: 0;
-    font-family: "Bricolage Grotesque";
-    font-size: 24px;
-    color: #fff;
-    font-weight: 600px;
-    font-style: bold;
-    padding-left: 18.06px;
-    bottom: 10px;
-    width: 225px;
-    height: 28.277px;
-}
-.portfolio-card2 {
-    flex: 0 0 380px;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    gap: 12px;
-    border-radius: 12px;
-    background: transparent;
-    width: 487px;
-    height: 320px;
-}
-.card-img2 {
+
+.hero-img img {
     width: 100%;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-    cursor: pointer;
-}
-.card-title2 {
-    position: absolute;
-    font-family: "Bricolage Grotesque";
-    font-size: 24px;
-    color: #fff;
-    font-weight: 600px;
-    font-style: bold;
-    padding-left: 18.06px;
-    bottom: 20px;
-    width: 421px;
+    border-radius: 50px;
+    display: flex;
+    max-height: 344px;
 }
 
-footer {
-  width: 100%;
-  min-height: 600px;
-  background-color: #28282b;
-  display: flex;
-  flex-direction: column;
+.hero-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: scaleX(1);
+  z-index: -1;
+  background-image: url(./assets/rectagle19.png);
+  background-size: 60%;
+  background-position: top 3rem right 47rem;
+  background-repeat: no-repeat;
+}
+
+.open-project {
+  gap: 0.5rem;
   align-items: center;
-  padding: 80px 5%;
-  box-sizing: border-box;
-  color: #ededed;
+  justify-content: center;
+  display: flex;
+  border-width: 1px;
+  opacity: 0.43;
+  border-radius: 32px;
+  border: solid;
+  width: fit-content;
+  padding: 6px 15px 6px 15px;
+  border-color: rgba(79, 79, 81, 1);
 }
 
-.footer p,
-a {
+.open-project h1 {
+  margin: 0;
+  font-family: Bricolage Grotesque;
+  font-weight: 500;
+  font-style: Medium;
   font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
 }
-.overview {
+
+.icons {
   display: flex;
-  flex-direction: row;
-}
-
-.identity {
-  width: 70%;
-  padding-right: 30px;
-}
-.identity p {
-  width: 70%;
-}
-.pages,
-.support {
-  width: 15%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 15px;
-  padding: 0 0px 0 30px;
-}
-
-.social-media {
-  padding-top: 40px;
-  width: 100%;
-  flex-direction: column;
-  align-items: start;
-  gap: 0px;
-}
-
-.social-media h2 {
-  margin: 0px 0px 10px 0px;
-}
-.logos {
-  display: flex;
-  gap: 12px;
-}
-.logos img {
-  width: 40px;
-  padding-bottom: 20px;
-}
-
-hr {
-  width: 100%;
-  height: 0.5px;
-  background: #ededed;
-}
-
-.copyright {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
   align-items: center;
-  justify-content: start;
-  gap: 6px;
-  padding-top: 10px;
+  justify-content: center;
+  opacity: 1;
 }
 
-.copyright h2 {
+.get-insights {
+  font-family: "Bricolage Grotesque";
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.fe {
+  font-family: "Bricolage Grotesque";
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 128px;
+  background-image: linear-gradient(to right, white, gray);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.hero-desc {
+  font-family: Junicode;
   font-weight: 400;
+  font-style: Regular;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.btn-hero {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/*contact*/
+.contact {
+  padding: 80px 60px;
+  display: flex;
+  gap: 15rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.contact h2 {
+  margin: 0;
+}
+
+.contact-tittle {
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+}
+
+.contact-us {
+  font-family: "Bricolage Grotesque"; 
+  font-weight: 400;
+  font-size: 48px;
+  padding-left: 5rem;
+  position: relative;
+  left: 0rem;
+}
+
+.input-box1 {
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: rgba(79, 79, 81, 1);
+  border: none;
+  color: white;
+  font-family: Bricolage Grotesque;
+  font-weight: 400;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.name-cluster {
+  gap: 2rem;
+  display: flex;
+  width: max-content;
+  height: max-content;
+  position: relative;
+}
+
+.name-cluster p {
+    display: block;
+    width: max-content;
+    margin: 0px;
+    position: absolute;
+}
+
+.input-box1::placeholder, .input-box2::placeholder, .input-box3::placeholder {
+  color:white;
+}
+
+.input-box3::placeholder {
+  position: absolute;
+  top: 0.5rem;
+}
+
+.email-cluster, .send-cluster{
+  display: grid;
+  width: fit-content;
+}
+
+.send-cluster {
+  width: 656px;
+}
+
+.name-p {
+    display: flex;
+    width: fit-content;
+}
+
+.name-p-last {
+    display: flex;
+    justify-content: flex-end;
+    width: fit-content;
+    margin-left: 273px;
+}
+
+.name {
+    display: flex;
+}
+
+.input-box2 {
+  width: 644px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: rgba(79, 79, 81, 1);
+  border: none;
+  color: white;
+  font-family: Bricolage Grotesque;
+  font-weight: 400;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.input-box3 {
+  width: 644px;
+  height: 121px;
+  border-radius: 5px;
+  background-color: rgba(79, 79, 81, 1);
+  border: none;
+  color: white;
+  font-family: "Bricolage Grotesque";
+  font-weight: 400;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.send-button {
+  border-radius: 10px;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  background-color: #ff7446;
+  color: white;
+  font-family: Bricolage Grotesque;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 18px;
+  gap: 1rem;
+  transition: 0.3s;
+  display: flex;
+  justify-self: right;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.form {
+  width: 724px;
+  height: 310px;
+}
+
+.contact-form {
+    display: flexbox;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-form textarea {
+    grid-column: 1 / -1;
+    height: 120px;
+    padding: 10px;
 }
