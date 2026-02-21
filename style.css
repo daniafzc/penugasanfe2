@@ -14,6 +14,7 @@
 
 html {
   scroll-behavior: smooth;
+  width: fit-content;
 }
 
 body {
@@ -42,14 +43,11 @@ a {
   line-height: 100%;
   letter-spacing: 0%;
   text-decoration: none;
-  color: rgba(186, 186, 186, 1);
+  color: rgba(237, 237, 237, 1);
   display: flexbox;
 }
 
-h1,
-h2,
-h3,
-p {
+h1, h2, h3, p {
   color: white;
 }
 
@@ -119,7 +117,25 @@ header {
   display: flex;
   height: 80px;
   align-items: center;
-  width: inherit;
+  width: 100%;
+  gap: 3rem;
+  font-family: Bricolage Grotesque;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+nav a {
+  font-family: Bricolage Grotesque;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(186, 186, 186, 1);
+  margin-right: 5rem;
 }
 
 .logo {
@@ -146,7 +162,7 @@ header {
   align-items: center;
   justify-content: center;
   height: fit-content;
-  margin: 12px 20px 0px 400px;
+  margin: 12px 20px 0px 200px;
 }
 
 .btn-nav {
@@ -159,11 +175,11 @@ header {
   display: flex;
   justify-content: center;
   padding: 200px 0px 300px;
-  gap: 20rem;
+  gap: 10rem;
   position: unset;
   z-index: 1;
   width: max-content;
-  margin: 0px 0px 0px 100px;
+  margin: 0px 0px 0px 80px;
 }
 
 .hero-text {
@@ -174,7 +190,12 @@ header {
   width: 100%;
   border-radius: 50px;
   display: flex;
-  max-height: 344px;
+  height: 24.5rem;
+}
+
+.hero-img {
+  margin-right: 100px;
+
 }
 
 .hero-background::before {
@@ -184,8 +205,8 @@ header {
   transform: scaleX(1);
   z-index: -1;
   background-image: url(./assets/rectagle19.png);
-  background-size: 60%;
-  background-position: top 3rem right 47rem;
+  background-size: 80%;
+  background-position: top 3.5rem right 18rem;
   background-repeat: no-repeat;
 }
 
@@ -243,6 +264,7 @@ header {
   color: transparent;
   line-height: 100%;
   letter-spacing: 0%;
+  margin: 0px;
 }
 
 .hero-desc {
@@ -254,6 +276,7 @@ header {
   letter-spacing: 0%;
   white-space: nowrap;
   width: fit-content;
+  margin: 0px;
 }
 
 .btn-hero {
